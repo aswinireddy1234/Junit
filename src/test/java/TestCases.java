@@ -3,6 +3,7 @@ import org.junit.Test;
 import userregisterprogram.FirstName;
 import userregisterprogram.LastName;
 import userregisterprogram.Email;
+import userregisterprogram.PhoneNumber;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 public class TestCases {
@@ -22,6 +23,11 @@ public class TestCases {
 
     @Test
     public void addTest3() { Assert.assertEquals(true,user3.Email2("ashu123@gmail.com"));
+    }
+    PhoneNumber  user4 =new PhoneNumber();
+
+    @Test
+    public void addTest4() { Assert.assertEquals(true,user4.PhoneNumber2("91 6303632499"));
     }
 }
 
