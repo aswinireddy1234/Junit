@@ -4,6 +4,7 @@ import userregisterprogram.FirstName;
 import userregisterprogram.LastName;
 import userregisterprogram.Email;
 import userregisterprogram.PhoneNumber;
+import userregisterprogram.Password;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 public class TestCases {
@@ -28,6 +29,11 @@ public class TestCases {
 
     @Test
     public void addTest4() { Assert.assertEquals(true,user4.PhoneNumber2("91 6303632499"));
+    }
+    Password  user5 =new Password();
+
+    @Test
+    public void addTest5() { Assert.assertEquals(true,user5.Password2("Ashu@04"));
     }
 }
 
